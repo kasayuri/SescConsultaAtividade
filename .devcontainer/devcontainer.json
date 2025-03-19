@@ -1,0 +1,19 @@
+{
+    "name": "Python 3 with Edge",
+    "build": {
+        "dockerfile": "../Dockerfile"
+    },	
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "mhutchie.git-graph",
+                "DavidAnson.vscode-markdownlint",
+                "streetsidesoftware.code-spell-checker",
+                "christian-kohler.path-intellisense",
+                "redhat.vscode-yaml"
+            ]
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.txt"
+}
