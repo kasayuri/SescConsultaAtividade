@@ -133,7 +133,7 @@ def send_discord_message(webhook_url, content):
     payload = {
         "content": content,
         "username": "Notificação importante!!",
-        "avatar_url": "https://cdn.discordapp.com/avatars/1234567890/abcdef1234567890abcdef1234567890.png",
+        "avatar_url": "https://cdn.pixabay.com/photo/2015/12/16/17/41/bell-1096280_1280.png",
         "tts": False
     }
     try:
