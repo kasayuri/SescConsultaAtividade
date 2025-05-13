@@ -113,12 +113,11 @@ def buscar_atividades(driver, unidades_selecionadas, categoria_curso, publico_ge
                 unidade = next((key for key, value in unidades.items() if value == unidade_element.text), None)
                 print('UNIDADE_element:' + unidade)
 
-                # unidade = unidade_element.text.replace('Sesc', '').strip()
-
                 if any(u in unidade for u in unidades_selecionadas):
                     botao_inscrever = atividade.find_elements(By.XPATH, ".//span[contains(text(), 'Inscrever')]")
                     if botao_inscrever:
-                        unidades_com_vagas.append(unidade)
+                        nome_completo_curso = atividade.find_element(By.XPATH, f".//div[contains(text(), '{nome_curso}')]").text
+                        unidades_com_vagas.append(unidade + " - " + nome_completo_curso)
             except Exception as e:
                 logging.warning(f"⚠ Erro ao verificar a atividade: {e}")
 
