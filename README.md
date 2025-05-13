@@ -4,7 +4,7 @@ Este projeto automatiza a consulta de inscrições abertas para atividades de al
 
 ## Descrição
 
-O script `ConsultaSesc.py` utiliza Selenium WebDriver para automatizar o processo de login no site do Sesc SP, pesquisa por atividades do curso informado e verifica se há inscrições abertas nas unidades selecionadas. Caso encontre inscrições abertas, o script envia uma mensagem para um webhook do Discord configurado.
+O script `ConsultarSesc.py` utiliza Selenium WebDriver para automatizar o processo de login no site do Sesc SP, pesquisa por atividades do curso informado e verifica se há inscrições abertas nas unidades selecionadas. Caso encontre inscrições abertas, o script envia uma mensagem para um webhook do Discord configurado.
 
 ## Requisitos
 
@@ -44,6 +44,6 @@ O script `ConsultaSesc.py` utiliza Selenium WebDriver para automatizar o process
 
 ## Uso
 
-Execute o script [ConsultaSesc.py](http://_vscodecontentref_/1):
+Execute o script [ConsultarSesc.py](http://_vscodecontentref_/1):
 ```sh
 python ConsultarSesc.py
