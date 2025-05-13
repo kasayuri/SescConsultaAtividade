@@ -1,6 +1,6 @@
 DEFAULT:
   DISCORD_WEBHOOK_URL: "url"
-  EDGE_DRIVER_LOCATION: "/usr/local/bin/msedgedriver"
+  EDGE_DRIVER_LOCATION: "msedgedriver.exe" #"/usr/local/bin/msedgedriver"
   USERNAME: "cpf"
   PASSWORD: "senha"
   PUBLICO_GERAL: False
@@ -11,8 +11,8 @@ DEFAULT:
     - "Consolação"
     - "Mogi Das Cruzes"
   URL_LOGIN: "https://centralrelacionamento.sescsp.org.br"
-  NOME_CURSO: "Esporte jovem"
-  CATEGORIA_CURSO: "Esporte e Atividade física"
+  NOME_CURSO: "MAM"
+  CATEGORIA_CURSO: ""
 
 UNIDADES:
   "14 Bis": "Sesc 14 Bis"
