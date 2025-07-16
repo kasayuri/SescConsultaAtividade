@@ -37,6 +37,9 @@ RUN wget -q https://msedgedriver.azureedge.net/$(microsoft-edge --version | awk 
     mv msedgedriver /usr/local/bin/ && \
     rm edgedriver_linux64.zip
 
+# Instalar firefox para testes Jules
+RUN apt-get update && apt-get install -y firefox-esr
+
 # Definir o diretório de trabalho
 WORKDIR /workspaces/SescConsultaAtividade
 
